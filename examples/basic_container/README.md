@@ -6,5 +6,5 @@ The container runs a corresponding python script that takes two arguements - ``-
 To run the container, use the following command for example
 
 ```
-docker run -v <folder>:/data ghcr.io/gemello-digitale-bologna/gdb-hpc-integration/basic_container:0.1s --input /data/<inputfile> --output /data/<outputfile>
+docker run -v <folder>:/data ghcr.io/gemello-digitale-bologna/gdb-hpc-integration/basic_container:0.2 --input /data/<inputfile> --output /data/<outputfile>
 ```
