@@ -7,3 +7,4 @@ if __name__ == "__main__":
     parser.add_argument('--output', type=str)
     args = parser.parse_args()
     process_data(args.input, args.output)
+    print("Done!")
