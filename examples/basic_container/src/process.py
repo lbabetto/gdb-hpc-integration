@@ -1,6 +1,8 @@
 import pandas as pd
+from os.path import splitext
 
-def process_data(infile, outfile):
-    df = pd.read_parquet(infile)
-    df.to_json(outfile, orient="records")
+def process_data(files_list):
+    for file in files_list:
+        df = pd.read_parquet(f"/input/{file}")
+        df.to_json(f"/output/{splitext(file)}.json", orient="records")
     
